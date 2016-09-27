@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>23届网络部预备役</title>
+<meta name="viewport" content="width=screen-width, initial-scale=1.0">
+<style>
+    html {_height:100%; margin:0; padding:0;}
+    body {_height:100%; margin:0; padding:0;}
+    
+    #welcome{width:100%; height:100%; position:absolute; left:0; top:0; text-align:center;  background:#000; cursor:pointer;}
+        .wpic{border:0; width:60%; vertical-align:middle; display:inline-block; padding-bottom:40px;}
+        .wpic h1 {color:#fff; font-size:1.5em;}
+        .wpic p {color:#aaa; font-size:1em;}
+        .verticalAlign{ vertical-align:middle; display:inline-block; height:100%; width:1px; margin-left:-1px;}            
+
+			#nav {position:fixed; _position:absolute; left:0;top:0; width:60%; height:100%; background:#ccc;}
+			/*----------Article-------------*/
+			 #top {text-align:center; padding-top:10px;}
+			  .header-bottom {z-inde:-1;}
+			#article {height:100%; width:100%; }
+			#rx {width:98%; margin:0 auto; text-align:center;}
+			.memberpic {display:inline-block; padding-right:20px; margin:0 auto;}
+
+				/*#Float*/
+						.menu {position:fixed; _position:absolute; right:30px; bottom:30px; cursor:pointer; width:40px; height:40px; background:#ccc; z-index:10;}
+					
+					/*to top*/
+#toTop{
+ position:fixed;
+ _position:absolute;
+ right:30px;
+ bottom:70px;
+ _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-40);
+ cursor:pointer;
+display:none;
+ background:blue;}
+
+</style>
+<link rel="stylesheet" type="text/css" media="only screen and (max-width: 800px)" href="./res/mobile.css"/>
+<link rel="stylesheet" type="text/css" media="only screen and (min-width: 801px)" href="./res/normal.css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    
+    <!--Welcome页面采用遮盖式覆盖MainPage页面实现动画效果-->
+    <div id="welcome" onclick="hide();">
+        <span class="verticalAlign"></span>
+        <div class="wpic">
+             <img id="w_pic" src="./images/ngW.png" alt="网络部" width="100%">
+             <h1>网络部 预备役</h1>
+             <p>轻触页面以继续</p>
+		</div>
+    </div>
+    <script type="text/javascript">
+    function hide(){
+        var wel = document.getElementById('welcome');
+        wel.style.display = "none";
+        					
+        var mainP = document.getElementById('mainPage');
+       mainP.style.display = "block";
+    }
+    
+    </script>
+
+    <!--Mainpage页面内容-->
+    <div id="mainPage" style="display:none;">
+        <div id="nav" style="display:none;">
+		<h1>预备役</h1>
+        <h2>导航</h2>
+								<ul>
+										<li><a href="#">工作证</a></li>					
+										<li><a href="#"></a></li>		
+										<li><a href="#"></a></li>		
+										<li><a href="#"></a></li>		
+			
+								</ul>
+        </div>
+        
+		
+				
+        <div id="article">
+			<div id="top">
+				<img src="./images/ngB.png" width="60%" alt="networkGroup from TUTEzlz"/>
+			</div>	
+			<hr border="1">	
+
+
+				<div id="security">
+				  <form>
+					<span>请输入密码:</span>
+					<input id="pwd" type="password" value=""/>
+					<input id="btn" type="button" value="验证:-)" onclick="init()"/>
+					<br/><span id="setNum" style="visibility:hidden;">0</span><span id="Hellotxt"></span>
+				  </form>
+				</div>
+				
+		  <div id="content">
+			<h2>Archive</h2>
+			<p>2016.初相识 :: 23届网络部预备役成员名单</p>
+			<div id="rx" style="display:none;">
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">甘金凤</span><span class="color"></span><br/><span>15822069518</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">何业俊</span><span class="color"></span><br/><span>18722595355</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">侯伟</span><span class="color"></span><br/><span>13821813352</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">黄健</span><span class="color"></span><br/><span>15117656696</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">姜雅</span><span class="color"></span><br/><span>13102109282</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">金紫薇</span><span class="color"></span><br/><span>18222330852</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">李茹茹</span><span class="color"></span><br/><span>15138890001</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">柳亚宁</span><span class="color"></span><br/><span>18794141813</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">龙泉州</span><span class="color"></span><br/><span>15892473707</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">裴(pe2i)风野</span><span class="color"></span><br/><span>18325307719</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">孙士</span><span class="color"></span><br/><span>15922839332</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">唐朝海</span><span class="color"></span><br/><span>15822911656</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">王俊凯</span><span class="color"></span><br/><span>13759136708</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">王晟铎(duo2)</span><span class="color"></span><br/><span>13821823057</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">吴凡</span><span class="color"></span><br/><span>15122977233</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">吴昕蓉</span><span class="color"></span><br/><span>15822962956</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">谢桂春</span><span class="color"></span><br/><span>15822732256</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">谢雯</span><span class="color"></span><br/><span>13820096151</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">姚依依</span><span class="color"></span><br/><span>15222408306</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">袁露</span><span class="color"></span><br/><span>13920075253</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">岳静云</span><span class="color"></span><br/><span>13102112230</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">张瑞瑞</span><span class="color"></span><br/><span>18202667750</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">赵笑笑</span><span class="color"></span><br/><span>13820389959</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">左蓉蓉</span><span class="color"></span><br/><span>13752783050</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">李聪</span><span class="color"></span><br/><span>15620763173</span></div>
+				</div>	
+				<div class="memberpic">
+					<div class="rximg"><img width="117px" height="166px" src=""></div>
+					<div class="description"><span class="gray">唐凌峰</span><span class="color"></span><br/><span>13920371936</span></div>
+				</div>	
+			  </div>
+			  <div id="forbidden" style="display:none;">
+				<h1 style="text-align:center;">HTTP 403 Forbidden</h1>
+				<br/>
+				<p>You don't have the permisson to acess this webpage, unless make sure you have the correct password then can you refresh this page and try again.</p>
+				<hr/>
+				<p><i>Powered by Github and Sourier. TUTE CSEngineering Class1501 2016 All Rights Reserved.</i></p>
+			</div>
+			</div>
+			<span style="clear:both;"/>
+			<hr border="1">	
+			<div id="footer">
+			
+			</div>
+        </div>
+        <div id="Float">
+      
+        			<img src="./toTop.png" id="toTop" alt="#top"/>
+										<div class="menu" onclick="his();">=</div>        
+        </div>
+    </div>
+	
+	<div id="forbidden" style="display:none;">
+		<h1 style="text-align:center;">HTTP 403 Forbidden</h1>
+		<br/>
+		<p>You don't have the permisson to acess this webpage, unless make sure you have the correct password then can you refresh this page and try again.</p>
+		<hr style="height:0.5;">
+		<p><i>Powered by Github and Sourier. TUTE ZLZ NetworkGroup 2016 All Rights Reserved.</i></p>
+	</div>
+	<script>
+	 var setWord = "ngp";
+	
+	var arti = document.getElementById('rx');
+		var img = arti.getElementsByTagName('img');
+		  //alert(img.length);
+		  for (i=1;i<45;i++){
+			img[i-1].src="./pics/" + i + ".jpg";
+		  }
+		  
+		  function Forbid(){
+	var hidden = document.getElementById('rx');
+	var display = document.getElementById('forbidden');
+	hidden.style.display = "none";
+	display.style.display = "block";
+}
+
+  function init(){
+    var pwd = document.getElementById('pwd').value;
+    var oBtn = document.getElementById('btn');
+    var Hellotxt = document.getElementById('Hellotxt');
+    var hidden = document.getElementById('security');
+    var show = document.getElementById('rx');
+    var setNum = document.getElementById('setNum');
+    var Num;
+    Num = parseInt(setNum.innerHTML) + 1;
+    setNum.innerHTML = Num;
+    if (pwd == setWord){
+      hidden.style.display = "none";
+      show.style.display = "block";
+	  document.getElementById('forbidden').style.display="none";
+    }
+    else{
+       Forbid();
+      }
+     
+  }
+	</script>
+    <script type="text/javascript">	
+    function his(){
+        var nav = document.getElementById('nav');
+        var vstatus = nav.style.display;
+        	
+			if(vstatus == "block"){
+				nav.style.display = "none";     				
+        	}
+        	else {
+        		nav.style.display = "block";
+        	}
+			
+       }
+    </script>
+ <script style="text/javascript">
+(function(win, doc){
+ //变量
+ var compatMode = doc.compatMode,
+  isChrome = win.navigator.userAgent.indexOf("Chrome") === -1 ? false : true,
+  scrollEle = compatMode === "BackCompat" || isChrome ? doc.body : doc.documentElement,
+  clientEle = compatMode === "BackCompat" ? doc.body : doc.documentElement,
+  toTopImg = doc.getElementById("toTop"),
+  rate = 0.6,
+  timeGap = 10;
+ //返回顶部图标的点击响应
+ toTopImg.onclick = function(){
+  var moveInterval = setInterval(moveScroll, timeGap);
+  function moveScroll(){
+   var scrollTop = scrollEle.scrollTop;
+   if(scrollTop === 0){
+    clearInterval(moveInterval);
+    return ;
+   }
+   scrollEle.scrollTop = scrollTop * rate;
+  }
+ };
+ //滚动时判断是否显示返回顶部图标
+ win.onscroll = function(){
+  var display = toTopImg.style.display;
+  if(scrollEle.scrollTop > clientEle.clientHeight){
+   if(display !== "block"){
+    toTopImg.style.display = "block";
+   }
+  }else{
+   if(display !== "none"){
+    toTopImg.style.display = "none";
+   }
+  }
+ };
+})(window, document);  
+  </script>
+</body>
+</html>
