@@ -1,0 +1,161 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+<title>校学生工作助理组邀请函</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link href="css/animate.css" rel="stylesheet" media="screen">
+<link href="et-line-font/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+<link href="font/css/font-awesome.min.css" rel="stylesheet">
+<style>
+.music_control {
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.play_btn {
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  background: url(sound.png) no-repeat 0 0; 
+  background-size: contain;
+  -webkit-animation: a_music_play 3s linear infinite;
+}
+.stop_btn {
+  display: none;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  background: url(sound_muted.png) no-repeat 0 0;
+  background-size: contain;
+}
+@-webkit-keyframes a_music_play{
+    0%{ -webkit-transform: rotate(0deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}
+</style>
+
+</head>
+
+<body> 
+<!--/.header-->
+
+<section id="home">
+  <div class="banner-container">
+    <div class="container"> 
+      <div class="heading text-center"> 
+	  <span style="position:absolute; right:40px; top:25px; color:#ddd;">点击播放</span>
+        <h2>校学生工作助理组</h2> 
+<h3>第二十三届年度总结汇报暨表彰大会</h3>	<h3>- 邀请函 -</h3>	</div>
+      <div class="countdown styled"></div>
+	  <!--
+	<audio id="bgaudio" autoplay="autoplay" loop="loop" controls="control" visibility="visible">
+		<source src="./images/ending.ogg"/>
+		<source src="./images/ending.mp3" />
+	</audio>
+	
+	-->
+	<div class="audio_wrap">
+    <div class="music_control">
+        <span class="play_btn"></span>
+        <span class="stop_btn"></span>
+    </div>
+</div>
+	
+	  <div class="col-sm-12 text-center copyrights">让我们相约6月14日，小礼堂不见不散~</div>
+
+
+    </div>
+  </div>
+  
+
+</section>  
+
+
+<script src="js/modernizr-latest.js"></script> 
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/jquery.nav.js" type="text/javascript"></script> 
+<script src="js/waypoints.js"></script> 
+<script src="js/Backstretch.js" type="text/javascript"></script> 
+<script src="contact/jqBootstrapValidation.js"></script>
+<script src="contact/contact_me.js"></script>
+<script src="js/custom.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script>
+function load_ready(){
+    audio_array[0].play();
+    audio_array[0].loop=true;
+}
+
+
+/*声音脚本 开始*/
+//音频标签存放数组
+var audio_array=[];
+function loadSound(){
+    var audio_num=0;
+
+    //获得json中图片的地址
+    var audio = document.createElement("audio");
+    audio.src = "m.mp3";//地址
+    audio.className="bg_music";
+    
+    audio_array.push(audio);
+    $(".audio_wrap").append(audio);
+    
+    audio_array[0].load();
+    audio_array[0].addEventListener("canplaythrough", function(){
+
+        load_ready();
+
+    });
+    
+}
+
+var play=0;
+$(".music_control").click(function(){
+    if(play==1){
+        
+        $(".play_btn").hide();
+        $(".stop_btn").show();
+        audio_array[0].pause();
+        play=0;
+        
+    }else{
+        
+        $(".stop_btn").hide();
+        $(".play_btn").show();
+        audio_array[0].play()
+        play=1;
+        
+    }
+});
+
+/*声音脚本 结束*/
+loadSound();
+</script>
+
+</body>
+</html>
